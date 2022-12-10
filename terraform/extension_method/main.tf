@@ -1,10 +1,10 @@
 terraform {
-  backend "azurerm" {
-    storage_account_name = "terraformstateAA"
-    container_name       = "tfstate"
-    key                  = "terraform.tfstate"
-    access_key           = "aaa"
-  }
+#   backend "azurerm" {
+#     storage_account_name = "terraformstateAA"
+#     container_name       = "tfstate"
+#     key                  = "terraform.tfstate"
+#     access_key           = "aaa"
+#   }
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
