@@ -1,5 +1,11 @@
 terraform {
-
+  backend "azurerm" {
+    storage_account_name = "terraformstateAA"
+    container_name       = "tfstate"
+    key                  = "terraform.tfstate"
+    access_key           = "aaa"
+  }
+}
 
   required_providers {
     azurerm = {
@@ -7,7 +13,6 @@ terraform {
       version = "=3.34.0"
     }
   }
-}
 
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
