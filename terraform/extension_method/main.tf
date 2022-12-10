@@ -5,14 +5,13 @@ terraform {
     key                  = "terraform.tfstate"
     access_key           = "aaa"
   }
-}
-
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
       version = "=3.34.0"
     }
   }
+}
 
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
