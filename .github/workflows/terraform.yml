@@ -46,10 +46,9 @@ jobs:
            
     - name: azure login
       uses: azure/login@v1
-      with:
+      env:
         creds: '${{ env.ARM_SUBSCRIPTION_ID }}'
-
-         
+ 
     - name: 'Terraform Plan'
       uses: hashicorp/terraform-github-actions@master
       with:
